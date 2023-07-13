@@ -1,0 +1,31 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block titulo_tab %} Razas de Perros {% endblock %}
+{% block titulo %} razas de perros {% endblock %}
+{% block contenido%} 
+<script src="{% static 'core/js/imagenesMascotas.js' %}"> </script>
+<div class="contenedor">
+    <ol class="contenedor_razas">
+        <li><a href="../paginas/americanPitBullTerrier.html">American Pit Bull Terrier</a></li>
+        <li><a href="../paginas/americanBully.html">American Bully</a></li>
+        <li><a href="../paginas/bullTerrier.html">Bull Terrier</a></li>
+        <li><a href="../paginas/doberman.html">Doberman</a></li>
+        <li><a href="../paginas/dogoArgentino.html">Dogo Argentino</a></li>
+        <li><a href="../paginas/dogoBurdeos.html">Dogo de Burdeos</a></li>
+        <li><a href="../paginas/bracoAleman.html">Braco Alemán</a></li>
+        <li><a href="../paginas/goldenRetriever.html">Golden Retriever</a></li>
+        <li><a href="../paginas/rottweiler.html">Rottweiler</a></li>
+    </ol>
+</div>
+
+<div class="imagenApi">
+<h2 class="apirest">Imagenes de Mascotas</h2>
+<img class="api" alt="Imágenes de Mascotas">
+</div>
+{% endblock %} 
+
+<!--
+{% block script_api %} 
+<script src="../paginas/imagenesMascotas.js"> </script>
+{% endblock %} 
+-->

@@ -1,0 +1,29 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block titulo_tab %} Razas de Perros {% endblock %}
+{% block titulo %} razas de perros {% endblock %}
+{% block contenido%} 
+    <div class="contenedor1">
+        <div class="razas">
+            <div class="raza">
+                <h2>American Pit Bull Terrier</h2>
+                <img src="{% static 'core/media/imagenes/01-american_pit_bull_terrier_1.jpg' %}" alt="imagen de american pit bull terrier">
+<!--                <a href="paginas/americanPitBullTerrier.html">caracteristicas</a>   -->
+                <p>
+                    El American Pit Bull Terrier es potencia y musculatura en estado puro. Sse caracteriza por tener una estructura corporal que se encuentra totalmente compensada.
+                </p>
+            </div>
+        </div>
+
+        <div class="razas">
+            <div class="raza">
+                <h2>American Bully</h2>
+                <img src="{% static 'core/media/imagenes/02-american_bully_1.jpg' %}" alt="imagen de american bully">
+ <!--               <a href="paginas/americanBully.html">caracteristicas</a>    -->
+                <p>
+                    Las características físicas del American Bully están muy abiertas, principalmente porque es una raza que cuenta con cuatro variedades.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %} 
